@@ -7,8 +7,17 @@
 
     <style>
 
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+        }
+        .text {
+            flex: 10;
+            text-align: left;
+        }
         body {
-            background-color: lightblue;
+            background-color: rgb(181, 29, 29);
         }
         h1 {
             color: white;
@@ -19,13 +28,21 @@
             text-align: left;
             margin-top: 100px;
         }
-        h3 {
-            color: white;
-            text-align: left;
-        }
         p {
             color: white;
-            text-align: center;
+            text-align: left;
+            font-size: 20px;
+            
+
+        }
+
+
+        li {
+            color: white;
+            text-align: left;
+            font-size: 20px;
+            
+
         }
         ul {
             color: white;
@@ -35,8 +52,8 @@
             display: block;
             margin-left: auto;
             margin-right: 10px;
-            width: 50%;
-
+            width: 50em;
+            flex: 1;
         }
 </style>
 
@@ -44,28 +61,56 @@
 
 </head>
 <h1>SYDAMERIKA</h1>
-<body>
+<body>   
+<div class="container">
+<div class="text">
 <h2>Allmän fakta om Sydamerika:</h2>
 <ul>
-    <li><h3>Invånare: 442 miljoner</h3></li>
-    <li><h3>Antalet länder: 12 länder</h3></li>
-    <li><h3>Landyta: 17814000 kvadratkolimeter</h3></li>
-    <li><h3>Språk: Spanska, Portugisiska, Franska, Creol, Engelska, Quzhua, Nederländska och Guarani</h3></li>
-    <li><h3>Klimat: Tropiskt, Torr, Kall och Tempurerad </h3></li>
-    <li><h3>Religioner: 90% Kristendom, ursprungsreligioner(Maya, Inka, Mapuche m.m.), Islam och Judendom</h3></li>
+    <li>Invånare: 442 miljoner</li>
+    <li>Antalet länder: 12 länder</li>
+    <li>Landyta: 17814000 kvadratkolimeter</li>
+    <li>Språk: Spanska, Portugisiska, Franska, Creol, Engelska, Quzhua, Nederländska och Guarani</li>
+    <li>Klimat: Tropiskt, Torr, Kall och Tempurerad </li>
+    <li>Religioner: 90% Kristendom, ursprungsreligioner(Maya, Inka, Mapuche m.m.), Islam och Judendom</li>
 </ul>
 
 <h2>Kuriosa om Sydamerika:</h2>
-<p><h4>Det som inte många vet om....</h4>
-
+<p>Sydamerika är en kontinent full av kontraster och fascinerande historier. Här hittar du Amazonas, världens största regnskog, som producerar en femtedel av jordens syre och myllrar av liv – från färgglada papegojor till gömda djungelstäder. Anderna, världens längsta bergskedja, sträcker sig genom sju länder och bjuder på hisnande vyer, gamla inkaruiner och några av världens högst belägna städer, som La Paz i Bolivia. I Peru gömmer sig Machu Picchu, en mystisk inkastad som fortfarande förbryllar forskare. Brasilien bjuder på rytmiska sambatoner, livliga karnevaler och världens bästa fotbollsspelare. Argentina är tango, pampas och saftiga biffar. Och naturen? Den är lika spektakulär. Salar de Uyuni i Bolivia ser ut som en spegelvärld efter regn, medan Angel Falls i Venezuela är världens högsta vattenfall. I Chile ligger Atacamaöknen, där vissa platser inte sett regn på hundratals år.
 </p>
 
 <h2>Historia:</h2>
-<p><h4>Det som inte många vet om....</h4> </p>
+<p>Sydamerikas historia är en berättelse om mäktiga riken, dramatiska erövringar och frihetskamp. Långt innan européerna satte sin fot här fanns avancerade civilisationer, som inkafolket i Peru, som byggde otroliga städer som Machu Picchu och skapade ett enormt vägnät genom Anderna. I Colombia levde chibchafolket, och i södra Chile kämpade mapuchekrigarna tappert mot inkräktare.
 
+    På 1500-talet förändrades allt när spanjorerna och portugiserna kom. De tog över med sina kanoner och sjukdomar, och snart var stora delar av kontinenten under europeisk kontroll. Städer som Lima och Buenos Aires blev viktiga handelsplatser, och miljontals afrikaner fördes hit som slavar för att arbeta på plantager.
+    
+    Men friheten skulle komma. På 1800-talet reste sig hjältar som Simón Bolívar och José de San Martín och kämpade för självständighet. Deras insatser formade det Sydamerika vi känner idag – en kontinent fylld av stolthet, kamp och kultur. </p>
+</div>
 
-
+<div id="img1">
 <img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/South_america_sv.svg/1024px-South_america_sv.svg.png" img>
+</div>
+</div>
+<div>
+<script>
+    
+    document.write("Amazonas producerar en tiondel av jordens syre. <br> Sant<input type='radio' name='fakta1' value='0'>Falskt<input type='radio' name='fakta1' value='1'> <br>")
+    document.write("Anderna sträcker sig genom sju länder. <br> Sant<input type='radio' name='fakta2' value='1'>Falskt<input type='radio' name='fakta2' value='0'><br>")
+    document.write("Salar de Uyuni i Bolivia är en av världens största sandöknar. <br> Sant<input type='radio' name='fakta3' value='0'>Falskt<input type='radio' name='fakta3' value='1'><br>")
+    document.write("Spanjorerna och portugiserna tog över Sydamerika på 1600-talet. <br> Sant<input type='radio' name='fakta4' value='0'>Falskt<input type='radio' name='fakta4' value='1'><br>")
+    document.write("Miljontals afrikaner fördes till Sydamerika för att arbeta som slavar. <br> Sant<input type='radio' name='fakta5' value='1'>Falskt<input type='radio' name='fakta5' value='0'><br>")
+    document.write("Simón Bolívar och José de San Martín kämpade för självständighet från kolonialmakterna. <br> Sant<input type='radio' name='fakta6' value='1'>Falskt<input type='radio' name='fakta6' value='0'><br>")
+    document.write("Atacamaöknen i Chile är känd för sina kraftiga regnperioder. <br> Sant<input type='radio' name='fakta7' value='0'>Falskt<input type='radio' name='fakta7' value='1'><br>")
+    document.write("Tryck här för att räkna ut hur många rätt du hade :): <input type = 'button' value = 'Rätta' onClick = 'summera()'>")
+   
+    // function summera() {
+        // var summa = 0;
+        // summa = fakta1.value + fakta2.value + fakta3.value + fakta4.value + fakta5.value + fakta6.value + fakta7.value;
+        // alert("Du fick " + summa + " rätt av 7 möjliga.");
+    // }
+</script>
+</div>
+
+
 <a href="https://www.koket.se/kladdkaka" target="_blank">KLADDKAKA</a>
 
 </body>
