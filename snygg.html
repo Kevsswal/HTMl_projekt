@@ -92,26 +92,31 @@
 </div>
 <div>
 <script>
-    
-    document.write("Amazonas producerar en tiondel av jordens syre. <br> Sant<input type='radio' name='fakta1' value='0'>Falskt<input type='radio' name='fakta1' value='1'> <br>")
-    document.write("Anderna sträcker sig genom sju länder. <br> Sant<input type='radio' name='fakta2' value='1'>Falskt<input type='radio' name='fakta2' value='0'><br>")
-    document.write("Salar de Uyuni i Bolivia är en av världens största sandöknar. <br> Sant<input type='radio' name='fakta3' value='0'>Falskt<input type='radio' name='fakta3' value='1'><br>")
-    document.write("Spanjorerna och portugiserna tog över Sydamerika på 1600-talet. <br> Sant<input type='radio' name='fakta4' value='0'>Falskt<input type='radio' name='fakta4' value='1'><br>")
-    document.write("Miljontals afrikaner fördes till Sydamerika för att arbeta som slavar. <br> Sant<input type='radio' name='fakta5' value='1'>Falskt<input type='radio' name='fakta5' value='0'><br>")
-    document.write("Simón Bolívar och José de San Martín kämpade för självständighet från kolonialmakterna. <br> Sant<input type='radio' name='fakta6' value='1'>Falskt<input type='radio' name='fakta6' value='0'><br>")
-    document.write("Atacamaöknen i Chile är känd för sina kraftiga regnperioder. <br> Sant<input type='radio' name='fakta7' value='0'>Falskt<input type='radio' name='fakta7' value='1'><br>")
-    document.write("Tryck här för att räkna ut hur många rätt du hade :): <input type = 'button' value = 'Rätta' onClick = 'summera()'>")
+    document.write("<h2>QUIZ om SYDAMERIKA!</h2>")
+    document.write("<p>Amazonas producerar en tiondel av jordens syre. <br> Sant<input type='radio' name='fakta1' value='0'>Falskt<input type='radio' name='fakta1' value='1'> <br></p>")
+    document.write("<p>Anderna sträcker sig genom sju länder. <br> Sant<input type='radio' name='fakta2' value='1'>Falskt<input type='radio' name='fakta2' value='0'><br></p>")
+    document.write("<p>Salar de Uyuni i Bolivia är en av världens största sandöknar. <br> Sant<input type='radio' name='fakta3' value='0'>Falskt<input type='radio' name='fakta3' value='1'><br></p>")
+    document.write("<p>Spanjorerna och portugiserna tog över Sydamerika på 1600-talet. <br> Sant<input type='radio' name='fakta4' value='0'>Falskt<input type='radio' name='fakta4' value='1'><br></p>")
+    document.write("<p>Miljontals afrikaner fördes till Sydamerika för att arbeta som slavar. <br> Sant<input type='radio' name='fakta5' value='1'>Falskt<input type='radio' name='fakta5' value='0'><br></p>")
+    document.write("<p>Simón Bolívar och José de San Martín kämpade för självständighet från kolonialmakterna. <br> Sant<input type='radio' name='fakta6' value='1'>Falskt<input type='radio' name='fakta6' value='0'><br></p>")
+    document.write("<p>Atacamaöknen i Chile är känd för sina kraftiga regnperioder. <br> Sant<input type='radio' name='fakta7' value='0'>Falskt<input type='radio' name='fakta7' value='1'><br></p>")
+    document.write("<p>Tryck här för att räkna ut hur många rätt du hade :): <input type = 'button' value = 'Rätta' onClick = 'summera()'></p>")
+function summera() {
    
-    // function summera() {
-        // var summa = 0;
-        // summa = fakta1.value + fakta2.value + fakta3.value + fakta4.value + fakta5.value + fakta6.value + fakta7.value;
-        // alert("Du fick " + summa + " rätt av 7 möjliga.");
-    // }
+    var summa = 0;
+    for (let i = 1; i <= 7; i++) {
+        var fakta = document.querySelector('input[name="fakta'+ i +'"]:checked');
+        var poäng = fakta ? parseInt(fakta.value) : 0;
+        summa += poäng;
+    }
+
+    alert("Du fick " + summa + " rätt av 7 möjliga.");
+}
 </script>
 </div>
 
 
-<a href="https://www.koket.se/kladdkaka" target="_blank">KLADDKAKA</a>
+<a href="https://www.koket.se/kladdkaka" target="_blank"><H2>KLICKA HÄR OM DU VILL TILLBAKA TILL HUVUDMENYN</H2></a>
 
 </body>
 </html>
